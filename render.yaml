@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: bot-alpaca
+    schedule: "0 13 * * 1-5"  # Ejecuta 9 AM NY (13:00 UTC)
+    runtime: python
+    buildCommand: ""
+    startCommand: "python main.py"
